@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Supply Registration</title>
+    <link rel="stylesheet" href="./supplier.css" />
+    <link rel="stylesheet" href="./supplier.js" />
+    <style>
+      .nav li a {
+  color: black !important;
+  font-weight: bold;
+  font-family: "Geneva" !important;
+}
+    </style>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-3 sidebar">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Profile Page</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./salesreg.html">Sales Reg</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./images/supplier.html"
+                >Supplier Reg in Bootstrap</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./images/supplierreg.html"
+                >Supplier Reg CSS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./stockreg.html">Stock Reg Form</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-9 mainb">
+          <h2 class="text-center">STOCK REGISTRATION FORM</h2>
+          <p>Endevour to fill all the fields.</p>
+          <div class="row">
+            <h3>Company Details</h3>
+            <div class="col">
+              <label for="name">Company Name</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Company name"
+                aria-label="First name"
+                id="name"
+                required
+              />
+            </div>
+
+            <div class="col">
+              <label for="address">Company Address</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Company Address"
+                aria-label="Last name"
+                id="address"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <label for="mail">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Enter email"
+                aria-label="First name"
+                id="mail"
+              />
+            </div>
+            <div class="col">
+              <label for="number">Contact Number</label>
+              <input
+                type="tel"
+                class="form-control"
+                placeholder="07xxxxxxxx"
+                aria-label="Last name"
+                id="number"
+              />
+            </div>
+          </div>
+          <div class="row mt-3">
+            <h3>Shareholder Details</h3>
+            <div class="col">
+              <label for="fname">Full Name</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Full name"
+                aria-label="First name"
+                id="fname"
+                required
+              />
+            </div>
+
+            <div class="col">
+              <label for="shaddress">Address</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Kampala"
+                aria-label="Last name"
+                id="shaddress"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Enter your email"
+                aria-label="First name"
+                id="email"
+              />
+            </div>
+            <div class="col">
+              <label for="pnumber">Phone Number</label>
+              <input
+                type="tel"
+                class="form-control"
+                placeholder="07xxxxxxxx"
+                aria-label="Last name"
+                id="pnumber"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <label for="origin">State</label>
+              <select id="origin" class="form-control">
+                <option selected>Choose...</option>
+                <option>Uganadan</option>
+                <option value="">Kenyan</option>
+                <option value="">Tanzanian</option>
+                <option value="">Sudanese</option>
+                <option value="">Rwandan</option>
+                <option value="">Somalian</option>
+                <option value="">Congolese</option>
+                <option value="">Murundi</option>
+                <option value="">Ethipioan</option>
+                <option value="">Other</option>
+              </select>
+            </div>
+            <div class="col">
+              <label for="ID">Identification</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter National ID"
+                aria-label="Last name"
+                id="ID"
+              />
+            </div>
+          </div>
+          <div class="row mt-3">
+            <h3>Stock Details</h3>
+            <div class="col">
+              <label for="stclss">Stock Class</label>
+              <select id="stclass" class="form-control">
+                <option selected>Choose...</option>
+                <option>Retail Imported</option>
+                <option value="">Retail Local</option>
+                <option value="">Wholesale Imported</option>
+                <option value="">Wholesale Local</option>
+              </select>
+            </div>
+
+            <div class="col">
+              <label for="sharenumber">Share Number</label>
+              <input
+                type="number"
+                class="form-control"
+                placeholder="Shares number"
+                aria-label="Last name"
+                id="sharenumber"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <label for="dissue">Date of Issue</label>
+              <input
+                type="date"
+                class="form-control"
+                aria-label="First name"
+                id="dissue"
+                required
+              />
+            </div>
+
+            <div class="col">
+              <label for="autoSizingInputGroup">Total Value</label>
+              <label class="visually-hidden" for="autoSizingInputGroup"></label>
+              <div class="input-group">
+                <div class="input-group-text">UGX</div>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="autoSizingInputGroup"
+                  placeholder="Amount"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <h3>Declaration</h3>
+            <h6>
+              I hereby declare that the above information is true and accurate
+              to the best of my knowledge.
+            </h6>
+            <label><b>Signature</b></label
+            ><br />
+            <canvas id="signature-pad"></canvas>
+
+            <div class="signature-buttons">
+              <button type="button" onclick="clearSignature()">
+                Clear Signature
+              </button>
+            </div>
+
+            <input type="hidden" name="signature" id="signature-data" />
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <label for="ddate">Date of Declaration</label>
+              <input
+                type="date"
+                class="form-control"
+                aria-label="First name"
+                id="ddate"
+                required
+              />
+            </div>
+          </div>
+          <div class="row mt-3 mb-4">
+            <h3>Official Use</h3>
+            <div class="col">
+              <label for="dept" title="Tap and choose">Department</label>
+              <select id="dept" class="form-control">
+                <option selected>Choose...</option>
+                <option>Chief Operations/Deputy</option>
+                <option value="">Productions</option>
+                <option value="">Transportation</option>
+                <option value="">Supplier and Distribution</option>
+                <option value="">Finances</option>
+              </select>
+            </div>
+
+            <div class="col">
+              <label for="adname">Admin Name</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Admin name"
+                aria-label="Last name"
+                id="adname"
+              />
+            </div>
+          </div>
+          <button type="submit" class="btn btn-outline-success">Submit</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascript for drawing the signature -->
+    <script>
+      const canvas = document.getElementById("signature-pad");
+      const ctx = canvas.getContext("2d");
+
+      let drawing = false;
+
+      canvas.addEventListener("mousedown", startDraw);
+      canvas.addEventListener("mouseup", stopDraw);
+      canvas.addEventListener("mousemove", draw);
+
+      function startDraw(e) {
+        drawing = true;
+        ctx.beginPath();
+        ctx.moveTo(e.offsetX, e.offsetY);
+      }
+
+      function stopDraw() {
+        drawing = false;
+        document.getElementById("signature-data").value = canvas.toDataURL();
+      }
+
+      function draw(e) {
+        if (!drawing) return;
+
+        ctx.lineWidth = 2;
+        ctx.lineCap = "round";
+        ctx.lineTo(e.offsetX, e.offsetY);
+        ctx.stroke();
+      }
+
+      function clearSignature() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        document.getElementById("signature-data").value = "";
+      }
+    </script>
+  </body>
+</html>
